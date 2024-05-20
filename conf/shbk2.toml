@@ -1,0 +1,16 @@
+[server]
+ip = "127.0.0.1"
+port = 9000
+backlog = 128
+req-timeout = 10
+res-timeout = 5
+
+[database]
+host = "127.0.0.1"
+port = 3306
+user = "root"
+pwd = "1234"
+db = "shbk2"
+min-size = 2
+max-size = 4
+waiting-seconds = 10

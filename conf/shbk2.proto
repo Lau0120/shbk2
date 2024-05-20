@@ -1,0 +1,27 @@
+syntax = "proto2";
+package shbk2;
+
+
+/* phone request & response */
+message PhoneReq
+{
+    required string phone_number    = 1;
+}
+message PhoneRes
+{
+    required int32 code             = 1;
+    optional string desc            = 2;
+    required int32 identifier       = 3;
+}
+
+/* login request & response */
+message LoginReq
+{
+    required string phone_number    = 1;
+    required int32 identifier       = 2;
+}
+message LoginRes
+{
+    required int32 code             = 1;
+    optional string desc            = 2;
+}
